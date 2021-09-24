@@ -1,0 +1,847 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED6746A926FE1E000009194A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6746A826FE1E000009194A /* AppDelegate.swift */; };
+		ED6746B326FE1E000009194A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6746B226FE1E000009194A /* SceneDelegate.swift */; };
+		ED6746B526FE1E000009194A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6746B426FE1E000009194A /* ViewController.swift */; };
+		ED6746B826FE1E000009194A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6746B626FE1E000009194A /* LaunchScreen.storyboard */; };
+		ED6746BB26FE1E000009194A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6746B926FE1E000009194A /* Main.storyboard */; };
+		ED6746C726FE1E020009194A /* paint_it_redTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6746C626FE1E020009194A /* paint_it_redTests.swift */; };
+		ED6746D126FE1E020009194A /* paint_it_redUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6746D026FE1E020009194A /* paint_it_redUITests.swift */; };
+		ED6746D326FE1E020009194A /* paint_it_redUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6746D226FE1E020009194A /* paint_it_redUITestsLaunchTests.swift */; };
+		ED6746D926FE1E020009194A /* paint-it-red Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ED6746D826FE1E020009194A /* paint-it-red Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ED6746DE26FE1E020009194A /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6746DD26FE1E020009194A /* SafariWebExtensionHandler.swift */; };
+		ED6746E126FE1E020009194A /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = ED6746E026FE1E020009194A /* _locales */; };
+		ED6746E326FE1E020009194A /* images in Resources */ = {isa = PBXBuildFile; fileRef = ED6746E226FE1E020009194A /* images */; };
+		ED6746E526FE1E020009194A /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = ED6746E426FE1E020009194A /* manifest.json */; };
+		ED6746E726FE1E020009194A /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = ED6746E626FE1E020009194A /* background.js */; };
+		ED6746E926FE1E020009194A /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = ED6746E826FE1E020009194A /* content.js */; };
+		ED6746EB26FE1E020009194A /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = ED6746EA26FE1E020009194A /* popup.html */; };
+		ED6746ED26FE1E020009194A /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = ED6746EC26FE1E020009194A /* popup.css */; };
+		ED6746EF26FE1E020009194A /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = ED6746EE26FE1E020009194A /* popup.js */; };
+		ED6746F126FE1E020009194A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6746BC26FE1E020009194A /* Assets.xcassets */; };
+		ED67470226FE21CB0009194A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED67470126FE21CB0009194A /* MainView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED6746C326FE1E020009194A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED67469D26FE1E000009194A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED6746A426FE1E000009194A;
+			remoteInfo = "paint-it-red";
+		};
+		ED6746CD26FE1E020009194A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED67469D26FE1E000009194A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED6746A426FE1E000009194A;
+			remoteInfo = "paint-it-red";
+		};
+		ED6746DA26FE1E020009194A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED67469D26FE1E000009194A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED6746D726FE1E020009194A;
+			remoteInfo = "paint-it-red Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ED6746F726FE1E020009194A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ED6746D926FE1E020009194A /* paint-it-red Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		ED6746A526FE1E000009194A /* paint-it-red.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "paint-it-red.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6746A826FE1E000009194A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED6746B226FE1E000009194A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ED6746B426FE1E000009194A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED6746B726FE1E000009194A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED6746BA26FE1E000009194A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED6746BC26FE1E020009194A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED6746BD26FE1E020009194A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED6746C226FE1E020009194A /* paint-it-redTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "paint-it-redTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6746C626FE1E020009194A /* paint_it_redTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paint_it_redTests.swift; sourceTree = "<group>"; };
+		ED6746CC26FE1E020009194A /* paint-it-redUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "paint-it-redUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6746D026FE1E020009194A /* paint_it_redUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paint_it_redUITests.swift; sourceTree = "<group>"; };
+		ED6746D226FE1E020009194A /* paint_it_redUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paint_it_redUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ED6746D826FE1E020009194A /* paint-it-red Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "paint-it-red Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED6746DD26FE1E020009194A /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		ED6746E026FE1E020009194A /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		ED6746E226FE1E020009194A /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		ED6746E426FE1E020009194A /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		ED6746E626FE1E020009194A /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		ED6746E826FE1E020009194A /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		ED6746EA26FE1E020009194A /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		ED6746EC26FE1E020009194A /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		ED6746EE26FE1E020009194A /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		ED6746F026FE1E020009194A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED67470126FE21CB0009194A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED6746A226FE1E000009194A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6746BF26FE1E020009194A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6746C926FE1E020009194A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6746D526FE1E020009194A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED67469C26FE1E000009194A = {
+			isa = PBXGroup;
+			children = (
+				ED6746A726FE1E000009194A /* paint-it-red */,
+				ED6746C526FE1E020009194A /* paint-it-redTests */,
+				ED6746CF26FE1E020009194A /* paint-it-redUITests */,
+				ED6746DC26FE1E020009194A /* paint-it-red Extension */,
+				ED6746A626FE1E000009194A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED6746A626FE1E000009194A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED6746A526FE1E000009194A /* paint-it-red.app */,
+				ED6746C226FE1E020009194A /* paint-it-redTests.xctest */,
+				ED6746CC26FE1E020009194A /* paint-it-redUITests.xctest */,
+				ED6746D826FE1E020009194A /* paint-it-red Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED6746A726FE1E000009194A /* paint-it-red */ = {
+			isa = PBXGroup;
+			children = (
+				ED6746A826FE1E000009194A /* AppDelegate.swift */,
+				ED6746B226FE1E000009194A /* SceneDelegate.swift */,
+				ED6746B426FE1E000009194A /* ViewController.swift */,
+				ED67470126FE21CB0009194A /* MainView.swift */,
+				ED6746B626FE1E000009194A /* LaunchScreen.storyboard */,
+				ED6746B926FE1E000009194A /* Main.storyboard */,
+				ED6746BC26FE1E020009194A /* Assets.xcassets */,
+				ED6746BD26FE1E020009194A /* Info.plist */,
+			);
+			path = "paint-it-red";
+			sourceTree = "<group>";
+		};
+		ED6746C526FE1E020009194A /* paint-it-redTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED6746C626FE1E020009194A /* paint_it_redTests.swift */,
+			);
+			path = "paint-it-redTests";
+			sourceTree = "<group>";
+		};
+		ED6746CF26FE1E020009194A /* paint-it-redUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED6746D026FE1E020009194A /* paint_it_redUITests.swift */,
+				ED6746D226FE1E020009194A /* paint_it_redUITestsLaunchTests.swift */,
+			);
+			path = "paint-it-redUITests";
+			sourceTree = "<group>";
+		};
+		ED6746DC26FE1E020009194A /* paint-it-red Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ED6746DD26FE1E020009194A /* SafariWebExtensionHandler.swift */,
+				ED6746F026FE1E020009194A /* Info.plist */,
+				ED6746DF26FE1E020009194A /* Resources */,
+			);
+			path = "paint-it-red Extension";
+			sourceTree = "<group>";
+		};
+		ED6746DF26FE1E020009194A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED6746E026FE1E020009194A /* _locales */,
+				ED6746E226FE1E020009194A /* images */,
+				ED6746E426FE1E020009194A /* manifest.json */,
+				ED6746E626FE1E020009194A /* background.js */,
+				ED6746E826FE1E020009194A /* content.js */,
+				ED6746EA26FE1E020009194A /* popup.html */,
+				ED6746EC26FE1E020009194A /* popup.css */,
+				ED6746EE26FE1E020009194A /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED6746A426FE1E000009194A /* paint-it-red */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED6746F826FE1E020009194A /* Build configuration list for PBXNativeTarget "paint-it-red" */;
+			buildPhases = (
+				ED6746A126FE1E000009194A /* Sources */,
+				ED6746A226FE1E000009194A /* Frameworks */,
+				ED6746A326FE1E000009194A /* Resources */,
+				ED6746F726FE1E020009194A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED6746DB26FE1E020009194A /* PBXTargetDependency */,
+			);
+			name = "paint-it-red";
+			productName = "paint-it-red";
+			productReference = ED6746A526FE1E000009194A /* paint-it-red.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED6746C126FE1E020009194A /* paint-it-redTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED6746FB26FE1E020009194A /* Build configuration list for PBXNativeTarget "paint-it-redTests" */;
+			buildPhases = (
+				ED6746BE26FE1E020009194A /* Sources */,
+				ED6746BF26FE1E020009194A /* Frameworks */,
+				ED6746C026FE1E020009194A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED6746C426FE1E020009194A /* PBXTargetDependency */,
+			);
+			name = "paint-it-redTests";
+			productName = "paint-it-redTests";
+			productReference = ED6746C226FE1E020009194A /* paint-it-redTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED6746CB26FE1E020009194A /* paint-it-redUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED6746FE26FE1E020009194A /* Build configuration list for PBXNativeTarget "paint-it-redUITests" */;
+			buildPhases = (
+				ED6746C826FE1E020009194A /* Sources */,
+				ED6746C926FE1E020009194A /* Frameworks */,
+				ED6746CA26FE1E020009194A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED6746CE26FE1E020009194A /* PBXTargetDependency */,
+			);
+			name = "paint-it-redUITests";
+			productName = "paint-it-redUITests";
+			productReference = ED6746CC26FE1E020009194A /* paint-it-redUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		ED6746D726FE1E020009194A /* paint-it-red Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED6746F426FE1E020009194A /* Build configuration list for PBXNativeTarget "paint-it-red Extension" */;
+			buildPhases = (
+				ED6746D426FE1E020009194A /* Sources */,
+				ED6746D526FE1E020009194A /* Frameworks */,
+				ED6746D626FE1E020009194A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "paint-it-red Extension";
+			productName = "paint-it-red Extension";
+			productReference = ED6746D826FE1E020009194A /* paint-it-red Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED67469D26FE1E000009194A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					ED6746A426FE1E000009194A = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					ED6746C126FE1E020009194A = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = ED6746A426FE1E000009194A;
+					};
+					ED6746CB26FE1E020009194A = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = ED6746A426FE1E000009194A;
+					};
+					ED6746D726FE1E020009194A = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = ED6746A026FE1E000009194A /* Build configuration list for PBXProject "paint-it-red" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED67469C26FE1E000009194A;
+			productRefGroup = ED6746A626FE1E000009194A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED6746A426FE1E000009194A /* paint-it-red */,
+				ED6746C126FE1E020009194A /* paint-it-redTests */,
+				ED6746CB26FE1E020009194A /* paint-it-redUITests */,
+				ED6746D726FE1E020009194A /* paint-it-red Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED6746A326FE1E000009194A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6746BB26FE1E000009194A /* Main.storyboard in Resources */,
+				ED6746B826FE1E000009194A /* LaunchScreen.storyboard in Resources */,
+				ED6746F126FE1E020009194A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6746C026FE1E020009194A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6746CA26FE1E020009194A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6746D626FE1E020009194A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6746E726FE1E020009194A /* background.js in Resources */,
+				ED6746ED26FE1E020009194A /* popup.css in Resources */,
+				ED6746EB26FE1E020009194A /* popup.html in Resources */,
+				ED6746E326FE1E020009194A /* images in Resources */,
+				ED6746E526FE1E020009194A /* manifest.json in Resources */,
+				ED6746E126FE1E020009194A /* _locales in Resources */,
+				ED6746E926FE1E020009194A /* content.js in Resources */,
+				ED6746EF26FE1E020009194A /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED6746A126FE1E000009194A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6746B526FE1E000009194A /* ViewController.swift in Sources */,
+				ED67470226FE21CB0009194A /* MainView.swift in Sources */,
+				ED6746A926FE1E000009194A /* AppDelegate.swift in Sources */,
+				ED6746B326FE1E000009194A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6746BE26FE1E020009194A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6746C726FE1E020009194A /* paint_it_redTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6746C826FE1E020009194A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6746D326FE1E020009194A /* paint_it_redUITestsLaunchTests.swift in Sources */,
+				ED6746D126FE1E020009194A /* paint_it_redUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6746D426FE1E020009194A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6746DE26FE1E020009194A /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED6746C426FE1E020009194A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED6746A426FE1E000009194A /* paint-it-red */;
+			targetProxy = ED6746C326FE1E020009194A /* PBXContainerItemProxy */;
+		};
+		ED6746CE26FE1E020009194A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED6746A426FE1E000009194A /* paint-it-red */;
+			targetProxy = ED6746CD26FE1E020009194A /* PBXContainerItemProxy */;
+		};
+		ED6746DB26FE1E020009194A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED6746D726FE1E020009194A /* paint-it-red Extension */;
+			targetProxy = ED6746DA26FE1E020009194A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED6746B626FE1E000009194A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED6746B726FE1E000009194A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ED6746B926FE1E000009194A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED6746BA26FE1E000009194A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED6746F226FE1E020009194A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED6746F326FE1E020009194A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED6746F526FE1E020009194A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AC5986BBE6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "paint-it-red Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "paint-it-red Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kukushechkin.paint-it-red.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED6746F626FE1E020009194A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AC5986BBE6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "paint-it-red Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "paint-it-red Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kukushechkin.paint-it-red.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED6746F926FE1E020009194A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AC5986BBE6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "paint-it-red/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "paint-it-red";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kukushechkin.paint-it-red";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED6746FA26FE1E020009194A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AC5986BBE6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "paint-it-red/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "paint-it-red";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kukushechkin.paint-it-red";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED6746FC26FE1E020009194A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AC5986BBE6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kukushechkin.paint-it-redTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/paint-it-red.app/paint-it-red";
+			};
+			name = Debug;
+		};
+		ED6746FD26FE1E020009194A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AC5986BBE6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kukushechkin.paint-it-redTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/paint-it-red.app/paint-it-red";
+			};
+			name = Release;
+		};
+		ED6746FF26FE1E020009194A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AC5986BBE6;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kukushechkin.paint-it-redUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "paint-it-red";
+			};
+			name = Debug;
+		};
+		ED67470026FE1E020009194A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AC5986BBE6;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kukushechkin.paint-it-redUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "paint-it-red";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED6746A026FE1E000009194A /* Build configuration list for PBXProject "paint-it-red" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6746F226FE1E020009194A /* Debug */,
+				ED6746F326FE1E020009194A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED6746F426FE1E020009194A /* Build configuration list for PBXNativeTarget "paint-it-red Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6746F526FE1E020009194A /* Debug */,
+				ED6746F626FE1E020009194A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED6746F826FE1E020009194A /* Build configuration list for PBXNativeTarget "paint-it-red" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6746F926FE1E020009194A /* Debug */,
+				ED6746FA26FE1E020009194A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED6746FB26FE1E020009194A /* Build configuration list for PBXNativeTarget "paint-it-redTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6746FC26FE1E020009194A /* Debug */,
+				ED6746FD26FE1E020009194A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED6746FE26FE1E020009194A /* Build configuration list for PBXNativeTarget "paint-it-redUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6746FF26FE1E020009194A /* Debug */,
+				ED67470026FE1E020009194A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED67469D26FE1E000009194A /* Project object */;
+}
