@@ -6,22 +6,35 @@
 //
 
 import Foundation
+import Combine
 
-let lastKnownExtensionStateKey = "lastKnownExtensionState"
+let lastKnownExtensionSettingsKey = "lastKnownExtensionSettings"
 
 class ViewModel: ObservableObject {
     @Published var websites: [WebSiteColor] = []
-    private let defaults = UserDefaults(suiteName: "AC5986BBE6.com.kukushechkin.PaintItRed.appGroup")
+    private let defaults = UserDefaults(suiteName: "group.AC5986BBE6.com.kukushechkin.PaintItRed.appGroup")
 
     public init() {
-        self.websites = (self.defaults?.object(forKey: lastKnownExtensionStateKey) as? [Any] ?? []).map({ decoded in
+        self.websites = (self.defaults?.object(forKey: lastKnownExtensionSettingsKey) as? [Any] ?? []).map({ decoded in
             // TODO: scary
             WebSiteColor(from: decoded)!
         })
+        self.observeItems(propertyToObserve: self.$websites)
     }
 
-    deinit {
-        self.defaults?.set(self.websites.map({ ws in try? ws.encode() }), forKey: lastKnownExtensionStateKey)
+    // https://stackoverflow.com/questions/63479425/observing-a-published-var-from-another-object
+    var itemObserver: AnyCancellable?
+    func observeItems<P: Publisher>(propertyToObserve: P) where P.Output == [WebSiteColor], P.Failure == Never {
+       itemObserver = propertyToObserve
+            .throttle(for: 0.5, scheduler: RunLoop.main, latest: true)
+            .sink {_ in
+                // os_log(.debug, log: self.log, "observed settings update")
+                self.updateSettings()
+            }
+    }
+
+    func updateSettings() {
+        self.defaults?.set(self.websites.map({ ws in try? ws.encode() }), forKey: lastKnownExtensionSettingsKey)
     }
 
     public func add() {

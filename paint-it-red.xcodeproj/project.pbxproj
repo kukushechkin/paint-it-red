@@ -108,6 +108,8 @@
 		EDB0E57426FE33B100BFF723 /* RuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleView.swift; sourceTree = "<group>"; };
 		EDB0E57726FE34D000BFF723 /* Color+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+hex.swift"; sourceTree = "<group>"; };
 		EDB0E57926FE38D800BFF723 /* Binding+onChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+onChange.swift"; sourceTree = "<group>"; };
+		EDB0E57B26FE3F5E00BFF723 /* paint-it-red Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "paint-it-red Extension.entitlements"; sourceTree = "<group>"; };
+		EDB0E57C26FE52D100BFF723 /* paint-it-red.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "paint-it-red.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 		ED6746A726FE1E000009194A /* paint-it-red */ = {
 			isa = PBXGroup;
 			children = (
+				EDB0E57C26FE52D100BFF723 /* paint-it-red.entitlements */,
 				EDB0E57626FE34C000BFF723 /* 3rd party stuff */,
 				EDB0E56F26FE275B00BFF723 /* fun stuff */,
 				EDB0E56E26FE274400BFF723 /* boring stuff */,
@@ -198,6 +201,7 @@
 		ED6746DC26FE1E020009194A /* paint-it-red Extension */ = {
 			isa = PBXGroup;
 			children = (
+				EDB0E57B26FE3F5E00BFF723 /* paint-it-red Extension.entitlements */,
 				ED6746DD26FE1E020009194A /* SafariWebExtensionHandler.swift */,
 				ED6746F026FE1E020009194A /* Info.plist */,
 				ED6746DF26FE1E020009194A /* Resources */,
@@ -620,6 +624,7 @@
 		ED6746F526FE1E020009194A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "paint-it-red Extension/paint-it-red Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AC5986BBE6;
@@ -641,6 +646,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kukushechkin.paint-it-red.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -650,6 +657,7 @@
 		ED6746F626FE1E020009194A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "paint-it-red Extension/paint-it-red Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AC5986BBE6;
@@ -671,6 +679,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kukushechkin.paint-it-red.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -683,6 +693,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "paint-it-red/paint-it-red.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AC5986BBE6;
@@ -720,6 +731,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "paint-it-red/paint-it-red.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AC5986BBE6;

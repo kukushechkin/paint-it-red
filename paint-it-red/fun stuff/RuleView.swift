@@ -29,6 +29,7 @@ struct RuleView: View {
             })
                 .textInputAutocapitalization(.never)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
+
             ColorPicker("", selection: self.$selectedColor.onChange(onChange))
         }
     }
